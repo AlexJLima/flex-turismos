@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+    <head>   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "css/myStyle.css">
+        <title>Flex Turismos</title>
+    </head>
+
+    <body>
+        <header class = "white-text">
+            <div id = "header-site" class = "container-flex">
+                <div class = "title-site">
+                    <h1>FlexTurismos</h1>
+                </div>
+                <div id = "nav-site" class = "flex">
+                    <a href = "#sobre_nos" class = "menu">Quem Somos</a>
+                    <a href = "#servicos" class = "menu">Serviços</a>
+                    <a href = "#planos" class = "menu">Planos</a>
+                </div>
+            </div>
+        </header>
+        <article id = "article-01" class = "container-flex">
+            <div style = "align-self: center;">
+                <img src = "img/00.png"/>
+            </div>
+            <div id = "apresentacao" class = "flex">
+                <div>
+                    <h1 class = "h1_title">Flex <br>Turismos</h1>
+                    <p>O melhor serviço para você!</p>
+                </div>
+                <div>
+                    <a class = "btn">Saiba mais</a>
+                </div>
+            </div>
+        </article>
+        <article id = "article-02" class = "container-flex" style = "margin-top: 50px;">
+            <div class = "flex-basis" style = "align-self: center;">
+                <img src = "img/01.png"/>
+            </div>
+            <div id = "sobre_nos" class = "flex flex-basis" style = "align-content: center;">
+                <div>
+                    <h1 class = "h1_title before_h1_title">Quem somos</h1>
+                </div>
+                <div>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                </div>
+            </div>
+        </article>
+        <article id = "article-03" style = "margin-top: 50px;">
+            <div id = "servicos">
+                <div class = "container-flex" id = "servicos-container" style = "padding: 55px;">
+                    <div class = "flex flex-column justify-center align-center margin-bottom">
+                        <img src = "img/icon-1.png" class = "icon"/>
+                        <p class = "white-text">Hospedagens</p>
+                        <a class = "btn-saiba">Saiba mais</a>
+                    </div>
+                    <div class = "flex flex-column justify-center align-center margin-bottom">
+                        <img src = "img/icon-2.png" class = "icon"/>
+                        <p class = "white-text">Pacotes de viagens</p>
+                        <a class = "btn-saiba">Saiba mais</a>
+                    </div>
+                    <div class = "flex flex-column justify-center align-center margin-bottom">
+                        <img src = "img/icon-3.png" class = "icon"/>
+                        <p class = "white-text">Roteiros personalizados</p>
+                        <a class = "btn-saiba">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id = "article-04" class = "flex-container">
+            <div id = "planos" class = "pad-top-bottom" style = "box-sizing: border-box;">
+                <div class = "container-flex" id = "plano-container">
+                    <div class = "card-plano flex flex-column margin-bottom" style = "justify-content: space-between;">
+                        <p class = "titulo-planos">Plano 1</p>
+                        <ul>
+                            <li>Suporte 24h</li>
+                            <li>Serviços de quarto</li>
+                            <li>Guia turístico</li>
+                        </ul>
+                        <a class = "btn">Saiba mais</a>
+                    </div>
+                    <div class = "card-plano flex flex-column margin-bottom" style = "justify-content: space-between;">
+                        <p class = "titulo-planos">Plano 2</p>
+                        <ul>
+                            <li>Suporte 24h</li>
+                            <li>Serviços de quarto</li>
+                            <li>Guia turístico</li>
+                            <li>Roteiro de trilhas</li>
+                            <li>Serviço personalizado</li>
+                        </ul>
+                        <a class = "btn">Saiba mais</a>
+                    </div>
+                    <div class = "card-plano flex flex-column margin-bottom" style = "justify-content: space-between;">
+                        <div class = "badge align-self-start">Melhor plano</div>
+                        <p class = "titulo-planos">Plano 3</p>
+                        <ul>
+                            <li>Suporte 24h</li>
+                            <li>Serviços de quarto</li>
+                            <li>Guia turístico</li>
+                            <li>Roteiro de trilhas</li>
+                            <li>Serviço personalizado</li>
+                            <li>Área Vip</li>
+                        </ul>
+                        <a class = "btn">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer class = "white-text" style = "margin-top: 50px;">
+            <a href = "#article-01" class = "btn_voltar_top">Voltar ao topo</a>
+            <div id = "footer-site" class = "container-flex justify-between" style = "padding: 10px;">
+                <p>© 2022 CSS Flexbox</p>
+                <div id = "credits" class = "flex flex-column justify-center" style = "max-width: 350px;">
+                    <p style = "text-align: left;">Desenvolvido por Victor Fernando. <br><b>Projeto original desenvolvido por  <br>Alexandre Lima</b></p>
+                    <hr width = "100%">
+                    <img class = "img-bootcamp" src = "img/impulso-javascript-logo.png">
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

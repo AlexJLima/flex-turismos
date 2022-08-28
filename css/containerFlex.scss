@@ -1,0 +1,207 @@
+@import url(myStyle.css);
+
+//tamanho dos dispositivos.
+$xs_sm: 576px;
+$md:    768px;
+$lg:    992px;
+$xl:    1200px;
+$xxl:   1290px;
+
+@media screen and(max-width: $xs_sm){
+    #header-site, #footer-site {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container-flex{
+        max-width: $xs_sm;
+    }
+
+    #article-01, #article-02{
+        flex-direction: column; 
+    }
+
+    #article-01 > #apresentacao{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+    }
+
+    #servicos > #servicos-container{
+        flex-direction: column; 
+    }
+    
+    #planos > #plano-container{
+        flex-direction: column;  
+    }
+
+}
+
+@media screen and(min-width: $xs_sm){
+    #header-site {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container-flex{
+        max-width: $xs_sm;
+    }
+
+    #article-01, #article-02{
+        flex-direction: column; 
+    }
+
+    #article-01 > #apresentacao{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;  
+    }
+
+    #servicos > #servicos-container{
+        flex-direction: column; 
+    }
+
+    #planos > #plano-container{
+        flex-direction: column;
+        align-items: center;  
+    }
+}
+
+@media screen and(min-width: $md){
+    #header-site {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container-flex{
+        max-width: $md;
+    }
+
+    #article-01 > #apresentacao{
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column; 
+    }
+
+    .flex-basis{
+        flex-basis: 1px;
+    }
+
+}
+
+@media screen and(min-width: $lg){
+    #header-site {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .container-flex{
+        max-width: $lg;
+    }
+
+    #article-01{
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    #article-02{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    #servicos > #servicos-container{
+        justify-content: space-between;
+        flex-direction: row; 
+    }
+
+    #planos > #plano-container{
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: row;  
+    }
+
+    #article-01 > #apresentacao{
+        align-items: flex-start; 
+    }
+
+    #apresentacao > div > .h1_title{
+        font-size: 50pt;
+    }
+
+    #apresentacao > div > p{
+        font-size: 14pt;
+    }
+
+    .flex-basis{
+        flex-basis: 626px;
+    }
+}
+
+@media screen and(min-width: $xl){
+    .container-flex{
+        max-width: $xl;
+    }
+}
+
+@media screen and(min-width: $xxl){
+    .container-flex{
+        max-width: $xxl;
+    }
+
+    #apresentacao > div > .h1_title{
+        font-size: 65pt;
+    }
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.pad-top-bottom{
+    padding:{
+        top: 15px;
+        bottom: 15px;
+    }
+}
+
+.margin-bottom{
+    margin:{
+        top: 30px;
+        bottom: 30px;
+    }
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.container-flex{
+    margin: 0px auto;
+    display: flex;
+    padding: 0px 50px;
+    box-sizing: border-box;
+    transition: 0.7s;
+}
+
+.align-self-start{
+    align-self: flex-start;
+}
+
+
